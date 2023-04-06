@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+  
+
+    
+  .banner {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  transition: transform 0.5s ease-out;
+}
+
+.banner:hover img {
+  transform: scale(1.1);
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.banner-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner-text p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.banner-text .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease-out;
+}
+
+.banner-text .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="banner">
+        <img src="images/demo/474x356.png" alt="Banner Image">
+        <div class="banner-text">
+          <h2>Amazing Product Launch!</h2>
+          <p>Get ready for the launch of our new product, which is going to revolutionize the industry. Sign up now to get early access.</p>
+          <a href="#" class="btn">Sign Up Now</a>
+        </div>
+      </div>
+      
+        
+    </body>
+</html>
